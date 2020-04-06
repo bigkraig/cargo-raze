@@ -6,7 +6,7 @@ alias(
 {%- endif %}
 
 rust_library(
-    name = "{{ target_name_sanitized }}",
+    name = "{{ target_name_sanitized }}{{ target_name_suffix }}",
     crate_root = "{{ target.path }}",
     crate_type = "{{ target.kind }}",
     edition = "{{ target.edition }}",
